@@ -1,4 +1,4 @@
-# .NET Core example
+# .NET Core API example
 A .NET Core API example which interacts with Order Items through LINQ
 
 This example is adapted from the template API code scaffolding. See ProductsController.cs for an example. Included are the following improvements:
