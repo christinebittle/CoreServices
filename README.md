@@ -11,6 +11,7 @@ This example is adapted from the template API code scaffolding. See ProductsCont
 - update-database
 - Tools > SQL Server Object Explorer > Database
 - Add Customer, Order, Product records
+- Interact with Ordered Items through API requests
 
 ## Index of Examples
 1. [Code First Migrations](https://github.com/christinebittle/CoreEntityFramework)
