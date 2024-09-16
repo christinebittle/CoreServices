@@ -21,6 +21,6 @@ This example is adapted from the template API code scaffolding. See ProductsCont
 - Modify ProductsController.cs to use the same routing convention as OrderItemsController
 - Create a ProductDTO
 - In the ProductDto, omit the price field
-- In ProductsController.cs, change ListProducts and FindProduct to return List<ProductDto> and ProductDto
+- In ProductsController.cs, change ListProducts and FindProduct to return List\<ProductDto\> and ProductDto
 - Document all methods in ProductsController.cs with descriptive summary blocks
 - Plan for future method ListProductsForCategory(int CategoryId)
