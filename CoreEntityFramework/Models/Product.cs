@@ -11,6 +11,8 @@ namespace CoreEntityFramework.Models
 
         public required string ProductSKU { get; set; }
 
+        public decimal ProductPrice { get; set; }
+
         //A product can have many categories
         public ICollection<Category>? Categories { get; set; }
 
@@ -18,4 +20,10 @@ namespace CoreEntityFramework.Models
         public ICollection<OrderItem>? Items { get; set; }
 
     }
+
+    public class ProductDto
+    {
+        //todo: fill out Data transfer object
+    }
+
 }

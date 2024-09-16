@@ -16,7 +16,7 @@
 
 
         //Each order belongs to one customer
-        public required virtual Customer Customer { get; set; }
+        public virtual Customer Customer { get; set; }
         public int CustomerId { get; set; }
 
         //An order can have many items
