@@ -1,26 +1,26 @@
-# .NET Core API example
-A .NET Core API example which interacts with Order Items through LINQ
-
-This example is adapted from the template API code scaffolding. See ProductsController.cs for an example. Included are the following improvements:
-- Clearer documentation (Controllers/OrderItems.cs)
-- Use of a Data Transfer Object (OrderItem.cs -> OrderItemDto)
-- Flattened representation of fields (Order Item -> Product, Order Item -> Order, Order Item -> Order -> Customer)
+# .NET Core Services & Relational CRUD
+This example factors our previous API functionality into a service, linked through an interface. It also extends CRUD to Products and Customers.
 
 ## To run this project
 - Tools > NuGet Package Manager > Package Manager Console
 - update-database
 - Tools > SQL Server Object Explorer > Database
-- Add Customer, Order, Product records
-- Interact with Ordered Items through API requests
+- Add Customer, Order records
+- Interact with Ordered Items, Products, Categories through API requests
 
 ## Index of Examples
-1. [Code First Migrations](https://github.com/christinebittle/CoreEntityFramework)
+1. [Core Entity Framework](https://github.com/christinebittle/CoreEntityFramework)
 2. [Core API](https://github.com/christinebittle/CoreAPI)
+3. [Core Services](https://github.com/christinebittle/CoreServices)
 
 ## Test Your Understanding!
-- Modify ProductsController.cs to use the same routing convention as OrderItemsController
-- Create a ProductDTO
-- In the ProductDto, omit the price field
-- In ProductsController.cs, change ListProducts and FindProduct to return List\<ProductDto\> and ProductDto
-- Document all methods in ProductsController.cs with descriptive summary blocks
-- Plan for future method ListProductsForCategory(int CategoryId)
+- Implement data access methods in Services/CustomerService.cs (defined in ICustomerService.cs)
+- Associate the CustomerService implementation with the ICustomerService interface in Program.cs
+- Create an API CustomerController.cs
+- Use dependency injection in the CustomerController.cs API to receive the ICustomerService interface
+- Use API endpoints + ICustomerService definitions to Create, Read, Update, Delete customers on each request
+- Create an interface Interfaces/IOrderService.cs
+- Create data access methods in Services/OrderService.cs
+- Use dependency injection to receive the database context in OrderService.cs
+- Repeat the same steps you did for customers!
+- IOrderService.cs will need an additional definition: ListOrdersForCustomer
