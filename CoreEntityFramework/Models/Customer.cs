@@ -14,4 +14,14 @@ namespace CoreEntityFramework.Models
         //A customer can have many orders
         public ICollection<Order>? Orders { get; set; }
     }
+
+    public class CustomerDto
+    {
+        public int? CustomerId { get; set; }
+
+        public required string CustomerName { get; set; }
+
+        public string? CustomerEmail { get; set; }
+
+    }
 }

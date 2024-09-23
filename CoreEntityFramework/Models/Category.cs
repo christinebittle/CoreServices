@@ -15,4 +15,13 @@ namespace CoreEntityFramework.Models
         public ICollection<Product>? Products { get; set; }
 
     }
+
+    public class CategoryDto
+    {
+        public int CategoryId { get; set; }
+
+        public required string CategoryName { get; set; }
+
+        public required string CategoryColor { get; set; }
+    }
 }

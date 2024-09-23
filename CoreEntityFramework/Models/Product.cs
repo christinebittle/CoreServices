@@ -24,6 +24,12 @@ namespace CoreEntityFramework.Models
     public class ProductDto
     {
         //todo: fill out Data transfer object
+        public int ProductId { get; set; }
+        public string ProductName { get; set; }
+
+        public string ProductSKU { get; set; }
+
+        public decimal ProductPrice { get; set; }
     }
 
 }

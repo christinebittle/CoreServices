@@ -1,11 +1,18 @@
 ﻿using CoreEntityFramework;
 using Microsoft.EntityFrameworkCore;
 using CoreEntityFramework.Controllers;
+using CoreEntityFramework.Interfaces;
+using CoreEntityFramework.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Associate service interfaces with their implementations
+builder.Services.AddScoped<IOrderItemService, OrderItemService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IProductService, ProductService>();
 
 
 var connectionString = builder.Configuration.GetConnectionString("MyAppCs");

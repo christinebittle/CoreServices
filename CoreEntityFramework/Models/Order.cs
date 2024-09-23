@@ -23,5 +23,18 @@
         public ICollection<OrderItem>? OrderItems { get; set; }
         
     }
+    
+
+    public class OrderDto
+    {
+        public int? OrderId { get; set; }
+
+        public string OrderDate { get; set; }
+
+        public string CustomerName { get; set; }
+
+        //todo: add more information for Orders
+
+    }
 
 }
