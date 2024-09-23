@@ -7,6 +7,7 @@ This example factors our previous API functionality into a service, linked throu
 - Tools > SQL Server Object Explorer > Database
 - Add Customer, Order records
 - Interact with Ordered Items, Products, Categories through API requests
+- Related methods: ListOrderItemsForOrder, ListOrderItemsForProduct, ListCategoriesForProduct, ListProductsForCategory, LinkCategoryToProduct, UnlinkCategoryFromProduct
 
 ## Index of Examples
 1. [Core Entity Framework](https://github.com/christinebittle/CoreEntityFramework)
