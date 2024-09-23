@@ -1,5 +1,5 @@
 # .NET Core Services & Relational CRUD
-This example factors our previous API functionality into a service, linked through an interface. It also extends CRUD to Products and Customers.
+This example factors our previous API functionality into a service, linked through an interface. It also extends CRUD to Products and Customers, with relationships explored between them.
 
 ## To run this project
 - Tools > NuGet Package Manager > Package Manager Console
