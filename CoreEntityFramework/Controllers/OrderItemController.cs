@@ -37,7 +37,7 @@ namespace CoreEntityFramework.Controllers
         [HttpGet(template:"List")]
         public async Task<ActionResult<IEnumerable<OrderItemDto>>> ListOrderItems()
         {
-            // empty list of data transfer object OrderItemDto
+            // returns a list of order item dtos
             IEnumerable<OrderItemDto> orderItemDtos = await _orderItemService.ListOrderItems();
             // return 200 OK with OrderItemDtos
             return Ok(orderItemDtos);
@@ -116,6 +116,9 @@ namespace CoreEntityFramework.Controllers
         /// Adds an Order Item
         /// </summary>
         /// <param name="orderItemDto">The required information to add the ordered item (OrderItemUnitPrice,OrderItemQty,ProductId,OrderId)</param>
+        /// <example>
+        /// POST api/OrderItem/Add
+        /// </example>
         /// <returns>
         /// 201 Created
         /// Location: api/OrderItem/Find/{OrderItemId}

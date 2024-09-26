@@ -7,15 +7,15 @@ namespace CoreEntityFramework.Interfaces
         // definitions for implementations of actions to create, read, update, delete
 
         // base CRUD
-        Task<IEnumerable<CustomerDto>> ListCustomers();
+        IEnumerable<CustomerDto> ListCustomers();
 
-        Task<CustomerDto?> FindCustomer(int id);
+        //Task<CustomerDto?> FindCustomer(int id);
 
-        Task<ServiceResponse> UpdateCustomer(CustomerDto CustomerDto);
+        //Task<ServiceResponse> UpdateCustomer(CustomerDto CustomerDto);
 
-        Task<ServiceResponse> AddCustomer(CustomerDto CustomerDto);
+        //Task<ServiceResponse> AddCustomer(CustomerDto CustomerDto);
 
-        Task<ServiceResponse> DeleteCustomer(int id);
+        //Task<ServiceResponse> DeleteCustomer(int id);
 
         // related methods
 

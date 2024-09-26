@@ -14,6 +14,8 @@ builder.Services.AddScoped<IOrderItemService, OrderItemService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 
+builder.Services.AddScoped<ICustomerService, CustomerService>();
+
 
 var connectionString = builder.Configuration.GetConnectionString("MyAppCs");
 builder.Services.AddDbContext<AppDbContext>(options =>

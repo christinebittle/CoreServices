@@ -213,7 +213,7 @@ namespace CoreEntityFramework.Controllers
         /// 404 Not Found
         /// </returns>
         /// <example>
-        /// DELETE: api/Category/Unlink?CategoryId=4&Productid=12
+        /// Delete: api/Category/Unlink?CategoryId=4&Productid=12
         /// ->
         /// Response Code: 204 No Content
         /// </example>
@@ -246,11 +246,11 @@ namespace CoreEntityFramework.Controllers
         /// 404 Not Found
         /// </returns>
         /// <example>
-        /// DELETE: api/Category/Link?CategoryId=4&Productid=12
+        /// Post: api/Category/Link?CategoryId=4&Productid=12
         /// ->
         /// Response Code: 204 No Content
         /// </example>
-        [HttpDelete("Link")]
+        [HttpPost("Link")]
         public async Task<ActionResult> Link(int categoryId, int productId)
         {
             ServiceResponse response = await _categoryService.LinkCategoryToProduct(categoryId, productId);
