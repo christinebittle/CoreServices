@@ -146,7 +146,7 @@ namespace CoreEntityFramework.Controllers
             }
 
             // returns 201 Created with Location
-            return Created($"api/Category/FindCategory/{CategoryDto.CategoryId}",CategoryDto);
+            return Created($"api/Category/FindCategory/{response.CreatedId}",CategoryDto);
         }
 
         /// <summary>

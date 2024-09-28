@@ -106,7 +106,6 @@ namespace CoreEntityFramework.Services
             // Create instance of Product
             Product Product = new Product()
             {
-                ProductId = ProductDto.ProductId,
                 ProductName = ProductDto.ProductName,
                 ProductSKU = ProductDto.ProductSKU,
                 ProductPrice = ProductDto.ProductPrice

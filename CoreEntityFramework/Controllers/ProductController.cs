@@ -152,7 +152,7 @@ namespace CoreEntityFramework.Controllers
             }
 
             // returns 201 Created with Location
-            return Created($"api/Product/FindProduct/{ProductDto.ProductId}", ProductDto);
+            return Created($"api/Product/FindProduct/{response.CreatedId}", ProductDto);
         }
 
         /// <summary>

@@ -9,6 +9,8 @@ namespace CoreEntityFramework.Models
 
         public required string CategoryName { get; set; }
 
+        public required string CategoryDescription { get; set; }
+
         public required string CategoryColor { get; set; }
 
         //A category can be applied to multiple products
@@ -21,6 +23,8 @@ namespace CoreEntityFramework.Models
         public int CategoryId { get; set; }
 
         public required string CategoryName { get; set; }
+
+        public required string CategoryDescription { get; set; }
 
         public required string CategoryColor { get; set; }
     }

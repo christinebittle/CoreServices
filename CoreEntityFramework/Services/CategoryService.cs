@@ -30,6 +30,7 @@ namespace CoreEntityFramework.Services
                 {
                     CategoryId = Category.CategoryId,
                     CategoryName = Category.CategoryName,
+                    CategoryDescription = Category.CategoryDescription,
                     CategoryColor = Category.CategoryColor
                 });
             }
@@ -56,6 +57,7 @@ namespace CoreEntityFramework.Services
             {
                 CategoryId = Category.CategoryId,
                 CategoryName = Category.CategoryName,
+                CategoryDescription = Category.CategoryDescription,
                 CategoryColor = Category.CategoryColor
             };
             return CategoryDto;
@@ -73,6 +75,7 @@ namespace CoreEntityFramework.Services
             {
                 CategoryId = CategoryDto.CategoryId,
                 CategoryName = CategoryDto.CategoryName,
+                CategoryDescription = CategoryDto.CategoryDescription,
                 CategoryColor = CategoryDto.CategoryColor
             };
             // flags that the object has changed
@@ -103,8 +106,8 @@ namespace CoreEntityFramework.Services
             // Create instance of Category
             Category Category = new Category()
             {
-                CategoryId = CategoryDto.CategoryId,
                 CategoryName = CategoryDto.CategoryName,
+                CategoryDescription = CategoryDto.CategoryDescription,
                 CategoryColor = CategoryDto.CategoryColor
             };
             // SQL Equivalent: Insert into Categories (..) values (..)
@@ -176,6 +179,7 @@ namespace CoreEntityFramework.Services
                 {
                     CategoryId = Category.CategoryId,
                     CategoryName = Category.CategoryName,
+                    CategoryDescription = Category.CategoryDescription,
                     CategoryColor = Category.CategoryColor
                 });
             }
