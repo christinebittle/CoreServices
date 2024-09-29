@@ -13,6 +13,7 @@ This example factors our previous API functionality into a service, linked throu
 1. [Core Entity Framework](https://github.com/christinebittle/CoreEntityFramework)
 2. [Core API](https://github.com/christinebittle/CoreAPI)
 3. [Core Services](https://github.com/christinebittle/CoreServices)
+4. [MVC & ViewModels](https://github.com/christinebittle/OnlineStore)
 
 ## Test Your Understanding!
 - Implement data access methods in Services/CustomerService.cs (defined in ICustomerService.cs)
