@@ -14,6 +14,8 @@ This example factors our previous API functionality into a service, linked throu
 2. [Core API](https://github.com/christinebittle/CoreAPI)
 3. [Core Services](https://github.com/christinebittle/CoreServices)
 4. [MVC & ViewModels](https://github.com/christinebittle/OnlineStore)
+5. [Simple Authentication](https://github.com/christinebittle/OnlineStore/tree/Authentication1)
+
 
 ## Test Your Understanding!
 - Implement data access methods in Services/CustomerService.cs (defined in ICustomerService.cs)
