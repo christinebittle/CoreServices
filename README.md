@@ -18,6 +18,7 @@ This example factors our previous API functionality into a service, linked throu
 6. [Image/File Upload](https://github.com/christinebittle/OnlineStore/tree/product-image-upload)
 7. [Role Based Authorization](https://github.com/christinebittle/OnlineStore/tree/Authentication2)
 8. [Conditional Access](https://github.com/christinebittle/OnlineStore/tree/conditional-access)
+9. [Conditional Rendering](https://github.com/christinebittle/OnlineStore/tree/conditional-rendering)
 
 ## Test Your Understanding!
 - Implement data access methods in Services/CustomerService.cs (defined in ICustomerService.cs)
